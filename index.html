@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>QR Code Scanner and Generator</title>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+    <input type="text" id="qr-input" placeholder="Enter text or URL" />
+    <button onclick="generateQR()">Generate QR</button>
+    <br />
+    <img id="qr-image" alt="QR Code will appear here" />
+    
+    <hr />
+    
+    <h1>QR Code Scanner</h1>
+    <input type="file" id="qr-upload" accept="image/*" />
+    <button onclick="scanQR()">Scan QR</button>
+    <p id="scan-result"></p>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
